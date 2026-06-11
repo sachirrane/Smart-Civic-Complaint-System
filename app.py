@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request ,redirect,session
 from datetime import datetime
 import sqlite3
+import os
 
 app = Flask(__name__)
 app.secret_key = "smartcivic123"
@@ -507,8 +508,13 @@ def admin_check():
         <h2>Invalid Admin Login</h2>
         <a href='/admin_login'>Try Again</a>
         """
+    
 
+    if __name__ == "__main__":
+     create_table()
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000)),
+        debug=False
+    )
 
-if __name__ == "__main__":
-    create_table()
-    app.run(debug=True)
