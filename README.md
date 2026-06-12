@@ -16,7 +16,7 @@ A robust, web-based platform built with Flask that allows users to log, track, a
 
 ## 🛠️ Tech Stack
 * **Backend:** Python, Flask
-* **Database/Storage:** [Insert your DB type here, e.g., SQLite / PostgreSQL]
+* **Database/Storage:** SQLite
 * **Environment Management:** Python `os` module for dynamic port and environment configuration
 
 ---
